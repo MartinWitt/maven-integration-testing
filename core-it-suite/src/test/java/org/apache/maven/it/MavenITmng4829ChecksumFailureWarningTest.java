@@ -58,6 +58,7 @@ public class MavenITmng4829ChecksumFailureWarningTest
         verifier.deleteArtifacts( "org.apache.maven.its.mng4829" );
         verifier.addCliOption( "-s" );
         verifier.addCliOption( "settings.xml" );
+        verifier.setEnvironmentVariable( "CI", "false" );
         verifier.filterFile( "settings-template.xml", "settings.xml", "UTF-8", verifier.newDefaultFilterProperties() );
         verifier.addCliArgument( "validate" );
         verifier.execute();

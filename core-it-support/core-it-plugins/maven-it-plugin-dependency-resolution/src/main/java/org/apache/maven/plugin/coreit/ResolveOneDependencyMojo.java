@@ -170,11 +170,11 @@ public class ResolveOneDependencyMojo
                     File file = a.getFile();
                     if ( file == null )
                     {
-                        getLog().info( " RESOLVE-ONE-DEPENDENCY " + a.toString() + " $ NO-FILE" );
+                        getLog().info( " RESOLVE-ONE-DEPENDENCY " + a  + " $ NO-FILE" );
                     }
                     else
                     {
-                        getLog().info( " RESOLVE-ONE-DEPENDENCY " + a.toString() + " $ " + file.getAbsolutePath() );
+                        getLog().info( " RESOLVE-ONE-DEPENDENCY " + a  + " $ " + file.getAbsolutePath() );
                     }
                     return;
                 }
